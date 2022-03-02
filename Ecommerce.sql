@@ -1,5 +1,7 @@
-show databases;
-use storefront;
+CREATE DATABASE ecommerce;
+use ecommerce;
+
+--Following tables are in Ecommerce DataBase;
 -- Drop TABLE User_Table;
 -- Drop TABLE Buyer;
 -- Drop TABLE Seller;
@@ -180,7 +182,7 @@ CREATE TABLE Shipper (
   Phone VARCHAR(15) NULL,
   PRIMARY KEY (ShipperID));
 
--- Payments . Amazon allows you to pay using multiple options only when one of them is giftcard option.
+-- Payments . Ecommerce site allows you to pay using multiple options only when one of them is giftcard option.
 
 CREATE TABLE Payment (
   PaymentID VARCHAR(8) NOT NULL,
